@@ -1,0 +1,51 @@
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+}
+
+body {
+    background-color: #121212;
+}
+
+h1 {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 50px;
+    color: white;
+}
+
+.terningbilde {
+    width: 350px;
+    height: 250px;
+}
+
+.terningbildevenstre {
+    width: 350px;
+    height: 250px;
+    margin-left: 100px;
+}
+
+.terningkode {
+    width: 50%;
+    height: 90%;
+    margin-top: 100px;
+    float: left;
+    margin-right: 210px;
+}
+
+p {
+    color: white;
+    margin-top: 250px;
+}
+
+.værbilde {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    margin-top: 200px;
+}

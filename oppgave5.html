@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let vinterOltabell = [
+        { Land: "Norge",
+          Sted: "Lillehammer",
+          Aarstall: "1994" },
+        { Land: "Japan",
+          Sted: "Nagano",
+          Aarstall: "1998" },
+        { Land: "USA",
+          Sted: "Salt Lake City",
+          Aarstall: "2002" },
+        { Land: "Italia",
+          Sted: "Torino",
+          Aarstall: "2006" },
+        { Land: "Canada",
+          Sted: "Vancouver",
+          Aarstall: "2010" },
+        { Land: "Russland",
+          Sted: "Sotsji",
+          Aarstall: "2014" },
+        { Land: "Sør-Korea",
+          Sted: "Pyeongchang",
+          Aarstall: "2018" },
+        { Land: "Kina",
+          Sted: "Beijing",
+          Aarstall: "2022" }
+    ];
+
+    function sorterland(a, b) { // Setter en funksjon
+        if (a.Land > b.Land) { // Sjekker om a er større enn b
+            return 1; // gir en verdi tilbake
+        } else if (a.Land < b.Land) { // Sjekker om a er mindre enn b
+            return -1; // gir en verdi tilbake
+        } else {
+            return 0; // gir en verdi tilbake
+        }
+    };
+
+    vinterOltabell.sort(sorterland); // Sorterer tabellen
+
+        for (var i = 0; i < vinterOltabell.length; i++) { // Setter en variabel med en verdi og sjekker
+            // om den er mindre enn vinterOltabell variabelen, hvis den er det plusser på 1
+            console.log("Vinter-OL i " + vinterOltabell[i].Aarstall + " ble arrangert i "
+                + vinterOltabell[i].Sted + " i " + vinterOltabell[i].Land); // Skriver ut en tekst
+        };
+
+</script>
+
+</body>
+</html>

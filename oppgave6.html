@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  aarstall = [];
+  skuddaar = [];
+
+  function aarstallfyller(forsteaar, sisteaar) { // Lager en funksjon
+      while (forsteaar <= sisteaar) { // Sjekker om forstaar er mindre eller lik som sisteaar
+          aarstall.push(forsteaar) // Putter verdien til forsteaar inn i aarstall arrayen
+          forsteaar++; // plusser på 1 på forsteaar
+      }
+  };
+
+  function skuddaarhenter(aar) { //lager en funksjon
+      for (let i = 0; i < aar.length; i++) { // setter variablene i med verdi 0, sjekker om den er mindre
+          // lengden enn parameteret aar og hvis den ikke er det plusser den med 1
+            let aarstalldividert = aar[i] / 4 // Setter en variabel som har verdien parameteret aar delt på 4
+          if (Number.isInteger(aarstalldividert) == true) { // Sjekker om aarstalldividert er helt tall.
+              skuddaar.push(aarstalldividert * 4) // Putter inn verdien til variablen i arrayen, ganger med 4
+          }
+      }
+  };
+
+  function bursdagskuddaar() { // lager en funksjon
+      for (var i = 0; i < skuddaar.length; i++) { // lager en variabel og hvis den er mindre en arrayen
+          // skuddaar legger den på 1
+          console.log("Hurra! I år " + skuddaar[i] + " kan du feire bursdag") // skriver ut teksten skrevet
+      }
+  };
+
+  aarstallfyller(1900, 2200);
+  skuddaarhenter(aarstall);
+  bursdagskuddaar();
+  console.log(aarstall);
+  console.log(skuddaar);
+</script>
+
+</body>
+</html>
